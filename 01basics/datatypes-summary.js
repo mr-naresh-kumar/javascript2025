@@ -31,3 +31,33 @@ const myFunction = function(){
 }
 console.log( myFunction()); // function
 console.log(typeof person); // object
+
+
+
+// ++++++++++++++++++++++++++++++++++
+
+
+// stack(primitive) , heap (Non-Primitive)
+
+
+let myYoutubename = 'hiteshchoudharyofficial';
+
+let anothername = myYoutubename;
+anothername = 'hiteshchoudhary';
+
+// console.log(myYoutubename); // hiteshchoudharyofficial
+// console.log(anothername); // hiteshchoudhary
+// console.log(anothername );
+
+
+// heap  data by reference then main data is change 
+let userOne = {
+    email: 'nareshbaghel274@gmail.com',
+    upi:"nareshbaghel@okhdfcbank"
+}
+let userTwo = userOne;
+userTwo.email = 'nareshbaghel90482@gmail.com'
+console.log(userOne.email); 
+console.log(userTwo.email);
+
+
